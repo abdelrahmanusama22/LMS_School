@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="styles.css">
+   
+    <title>ElMorsy School</title>
+    
+    <title>Document</title>
+</head>
+<body>
+    <niv_bar>
+        <a img src="https://app.brandmark.io/v3/" alt="" srcset="">logo</a>
+        <ul>
+
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us .html">About Us</a></li>
+            <li><a href="admission.html">admission</a></li>
+            <li><a href="Connect Us.html">Contact Us</a></li>
+            <li><a href="Payments.html">Payment</a></li>
+        </ul>
+    </niv_bar>
+    <br> 
+    <div class="admission-form">
+        <h2>Admission Form</h2>
+        <form action="data.php" method="post">
+            <label for="ID">ID</label>
+            <input type="text" id="ID" name="ID" >
+          
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" >
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male" name="male">Male</option>
+                <option value="female" name="female">Female</option>
+                <option value="other" nmae="other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div> 
+    
+    
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Contact Information</h4>
+                    <p>123 Street, Cityville, Country</p>
+                    <p>Email: info@elmorsyschool.com</p>
+                    <p>Phone: +123 456 789</p>
+                </div>
+                <div class="col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us .html">About Us</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="Connect Us.html">Contact Us</a></li>
+                        <li><a href="Payments.html">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Follow Us</h4>
+                    <p>&copy; 2023 ElMorsy School. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="copyright">Designed by ElMorsy School</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

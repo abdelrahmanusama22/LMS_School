@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="all.main.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="popper.min.js"> </script>
+    <script src="bootstrap.min.js"></script> -->
+    
+    <title>ElMorsy School</title>
+    <!-- <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <niv_bar>
+
+        <a img src="https://app.brandmark.io/v3/" alt="" srcset="">logo</a>
+        <ul>
+
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us .html">About Us</a></li>
+            <li><a href="admission.html">admission</a></li>
+            <li><a href="Connect Us.html">Contact Us</a></li>
+            <li><a href="Payments.html">Payment</a></li>
+        </ul>
+        <!-- <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form> -->
+    </niv_bar>
+    <div class="vandm" id="vandm">
+        <section class="vision">
+            <h2>Vision</h2>
+            <p>"Empowering Future Leaders through Excellence in Education"</p>
+        </section>
+        <section class="mission">
+            <h2>Mission</h2>
+            <p>Our mission is to provide a nurturing and inclusive learning environment that fosters academic
+                excellence,
+                critical thinking, and character development. We are dedicated to cultivating a passion for lifelong
+                learning, promoting creativity, and instilling values that prepare our students to contribute positively
+                to
+                a diverse and global society.</p>
+        </section>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="p2.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="h1.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="p5.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Contact Information</h4>
+                    <p>123 Street, Cityville, Country</p>
+                    <p>Email: info@elmorsyschool.com</p>
+                    <p>Phone: +123 456 789</p>
+                </div>
+                <div class="col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About Us .html">About Us</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="Connect Us.html">Contact Us</a></li>
+                        <li><a href="Payments.html">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Follow Us</h4>
+                    <p>&copy; 2023 ElMorsy School. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="copyright">Designed by ElMorsy School</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+     let slideIndex = 0;
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    // If the index is greater than the number of slides, reset to the first slide
+    if (n >= slides.length) {
+        slideIndex = 0;
+    }
+    // If the index is less than 0, set it to the last slide
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // Remove "active" class from all dots
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // Display the current slide and set "active" class to the corresponding dot
+    slides[slideIndex].style.display = "block";
+    dots[slideIndex].className += " active";
+
+    // Automatically advance to the next slide after 3 seconds
+    setTimeout(() => {
+        plusSlides(1);
+    }, 2000);
+}
+
+// Start the slideshow
+showSlides(slideIndex);
+    </script>
+</body>
+
+</html>
